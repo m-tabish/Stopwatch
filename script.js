@@ -50,17 +50,17 @@ function start() {
         stopWatchStarted = true;
         startInterval = setInterval(() => {
             sec++;
-            sws.textContent = sec<10?"0"+sec:sec;
+            sws.textContent = sec < 10 ? "0" + sec : sec;
             if (sec > 59) {
-                sec = "0"+0;
+                sec = "0" + 0;
                 sws.textContent = sec;
                 min++;
-                swm.textContent = min <10?"0"+min:min;
+                swm.textContent = min < 10 ? "0" + min : min;
                 if (min > 59) {
-                    min = "0"+0;;
+                    min = "0" + 0;;
                     swm.textContent = min;
                     hour++;
-                    swh.textContent = hour<10?"0"+hour:hour;
+                    swh.textContent = hour < 10 ? "0" + hour : hour;
                     if (hour > 60) {
                         pause();
                     }
@@ -83,10 +83,11 @@ function reset() {
     swh.textContent = "00";
     swm.textContent = "00";
     sws.textContent = "00";
-    
+
 }
 
 window.addEventListener('reload', start)
+setInterval(time, 1000);
 time();
 clickToActivate();
 
