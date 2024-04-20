@@ -1,0 +1,18 @@
+{
+"homepage": "https://m-tabish.github.io/stopwatch",
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy":"npm run build"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "stopwatch"
+  },
+  "author": "Tabish",
+  "license": "ISC"
+}
