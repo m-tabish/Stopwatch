@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.box1-default {
+	width: 40%;
+	height: 40vh;
+ 
+	margin-top: 20px;
+}
+.box1 {
+	width: 40%;
+ 
+	margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	
+}
+
+.box1-active {
+	height: 70vh;
+}
+.box2 {
+	width: 40%;
+	 
+	margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box2-default {
+	height: 40vh;
+}
+
+.box2-active {
+	height: 70vh;
+}

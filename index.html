@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div
+        class="container min-w-full h-screen text-white bg-black flex justify-around overscroll:hidden overflow-hidden  ">
+
+        <!-- clock -->
+        <div class="box1 box1-active flex flex-col justify-evenly bg-red-500 rounded-xl h-1/2"
+            onclick="clickToActivate();time();">
+            <h1 class="text-7xl font-black text-black ">TIME</h1>
+            <div class=" time flex  w-full justify-around  h-1/2 lg:text-3xl text-5xl ">
+                <div class="hours "></div>
+                <span>:</span>
+                <div class="minutes  "></div>
+                <span>:</span>
+                <div class="seconds "></div>
+            </div>
+        </div>
+
+
+        <!-- stopwatch -->
+
+        <div class="box2 box2-default flex rounded-xl h-4/5" onclick="clickToActivate()">
+            <h1 class="text-6xl font-black text-white sm:py-20 md:py-3">Stopwatch</h1>
+            <div class="flex flex-col justify-between h-full w-full items-center">
+                <div class=" w-full p-6 m-auto flex justify-between text-5xl">
+                    <div class="sw_hours">00</div>
+                    <span>:</span>
+                    <div class="sw_min">00</div>
+                    <span>:</span>
+                    <div class="sw_sec">00</div>
+                </div>
+                <div class="flex w-full items-end place-items-end justify-between px-3 mb-10 text-black">
+                    <button class=" p-2 w-20 rounded-full bg-yellow-400" onclick="pause()">pause</button>
+                    <button class=" p-2 w-20 h-20 bg-green-400 rounded-full" onclick="start()">start</button>
+                    <button class=" p-2 w-20 rounded-full bg-yellow-400"
+                        onclick="pause();reset(); ">reset</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
